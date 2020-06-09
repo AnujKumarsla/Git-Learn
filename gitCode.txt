@@ -73,4 +73,13 @@ git log --pretty - full
 git log --since = 2.days
 
 git log --pretty=format:"<my format style>"
-git log --pretty=format:"%Cyellow%h %Creset %an  %al \n %Cgreen%cn %cl"
+git log --pretty=format:"%Cgreen%h %Creset %an  %al \n %Cred%cn %cl"
+
+to ustage any file from staging are---------------
+git restore --staged <fileName>
+To revert the changes in the current file content--------
+Note : be aware before using this , this will destroy your data completely
+git checkout --<fileName>
+To revert back to your immediate back commit state---------
+Note : Be aware of this , copy your current state files it will completely get revert
+    git checkou --f
