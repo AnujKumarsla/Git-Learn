@@ -1,0 +1,73 @@
+Initializing----------------------------
+git init
+git status
+
+Staging the fle ---------------------
+git add .
+git add --a
+
+Commit -------------------
+git commit -m <message>
+git commit -a -m <message>
+
+Reviewing commits------------------
+git log
+git log --oneline
+
+
+configurations :-------------------
+git config --global user.email <email>
+git config --global user.name <name>
+git confg --list 
+git config --global core.editor emacs
+git config --global core.editor vim 
+
+Delete Repo---------------------
+Note : to delete any git repo completely
+rm -rf .git
+
+Clone git Repository-----------------
+git clone <url> <dirName>
+git clone <url>
+
+linux commands ---------------------
+ls, pwd, cd / , cd /c
+----------------------------------------
+
+Git ignore--------------------
+touch .gitignore
+    *.log
+    *.exe
+    dir/
+    /dir/
+    <full path>
+    static/dir
+
+Compare------------------------
+git diff 
+git diff --staged
+
+
+Performing file operation from git------------
+git rm <filename>
+git mv <old_file_name> <new_file_name>
+
+operation on tracked  file into .gitignore----------------
+
+deleting ------
+add <filename> to .gitignore
+git rm --cached <filename>
+commit .gitignore
+
+adding tracked  file into .gitignore
+    remove <filename> form .gitignore
+    git add <filename>
+
+Reviewing commits------------------
+git log
+git log --oneline
+git log -p -<number of commit>
+git log --stat 
+git log --pretty = short 
+git log --pretty - full
+git log --since = 2.days
