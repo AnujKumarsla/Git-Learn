@@ -1,2 +1,3 @@
-
-print("bugfee temp ")
+red
+blue 
+green
