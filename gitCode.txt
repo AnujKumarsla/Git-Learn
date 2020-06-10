@@ -83,3 +83,13 @@ git checkout --<fileName>
 To revert back to your immediate back commit state---------
 Note : Be aware of this , copy your current state files it will completely get revert
     git checkou --f
+
+
+Adding ssh keys
+ssh-keygen -t rsa -b 4096 -C "an1020nmhk@gmail.com"
+    Enter a file in which to save the key
+    start the ssh-agent in the background
+eval $(ssh-agent -s)
+    Agent pid 59566
+ssh-add ~/.ssh/id_rsa
+tail ~/.ssh/id_rsa
